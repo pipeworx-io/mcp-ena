@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/ena",
   "title": "Ena",
   "description": "European Nucleotide Archive (ENA) — EMBL-EBI's public record of raw sequencing runs, assemblies…",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/ena",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-ena",

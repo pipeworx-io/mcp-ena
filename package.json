@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ena",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "European Nucleotide Archive (ENA) — EMBL-EBI's public record of raw sequencing runs, assemblies and annotated sequence, searchable by organism, study, platform, collection country or date, with the FASTQ/BAM download URLs and checksums for every run.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ena": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ena"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ena.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ena",
   "pipeworx": {
-    "sourceHash": "v1-d01b6e6fccc9131cca7d51c94c02fae9d03081e3b7fe2c514ab4469776448494",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "ena",
+    "gatewaySlug": "ena",
+    "sourceHash": "v1-6b6c3f06441b13ef5e345b67e97a54752061432893b02787793da55a0424b2e3",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
