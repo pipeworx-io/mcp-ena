@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ena",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "European Nucleotide Archive (ENA) — EMBL-EBI's public record of raw sequencing runs, assemblies and annotated sequence, searchable by organism, study, platform, collection country or date, with the FASTQ/BAM download URLs and checksums for every run.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ena",
     "gatewaySlug": "ena",
-    "sourceHash": "v1-6b6c3f06441b13ef5e345b67e97a54752061432893b02787793da55a0424b2e3",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-f7d097daeec353751b7118561b2f725b68f632df818325b20c917549396a6462",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
